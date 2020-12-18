@@ -15,8 +15,11 @@
   },
   "dependencies": {
     "@svgr/parcel-plugin-svgr": "^5.4.0",
+    "prop-types": "^15.7.2",
     "react": "17.0.1",
     "react-dom": "^17.0.1",
+    "react-wave": "^0.1.1",
+    "tweakpane": "^1.5.7",
     "use-caret-position": "^0.0.1"
   }
 }
