@@ -15,10 +15,11 @@ const Waves = ({
   opacity,
   speed,
   height,
+  className,
 }) => {
   const TOTAL = width.length
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${className}`}>
       {new Array(TOTAL).fill().map((_, index) => (
         <svg
           key={`wave-${id || new Date().getTime()}-${index}`}
