@@ -16,20 +16,21 @@ const Waves = ({
   speed,
   height,
 }) => {
+  const TOTAL = width.length
   return (
     <div className={styles.container}>
-      {new Array(width.length).fill().map((_, index) => (
+      {new Array(TOTAL).fill().map((_, index) => (
         <svg
           key={`wave-${id || new Date().getTime()}-${index}`}
-          className="wave"
+          className={`wave ${styles.wave}`}
           style={{
-            '--height': height[index],
-            '--width': width[index],
-            '--opacity': opacity[index],
-            '--speed': speed[index],
-            '--hue': hue[index],
-            '--saturation': saturation[index],
-            '--lightness': lightness[index],
+            '--height': height[(TOTAL - 1) - index],
+            '--width': width[(TOTAL - 1) - index],
+            '--opacity': opacity[(TOTAL - 1) - index],
+            '--speed': speed[(TOTAL - 1) - index],
+            '--hue': hue[(TOTAL - 1) - index],
+            '--saturation': saturation[(TOTAL - 1) - index],
+            '--lightness': lightness[(TOTAL - 1) - index],
           }}
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 762 52.917"
