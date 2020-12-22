@@ -8,7 +8,7 @@
 .wave {
   height: calc(var(--height, 0) * 1%);
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   position: absolute;
   width: calc(var(--width, 200) * 1%);
   animation: wave calc(var(--speed, 0) * 1s) infinite linear;

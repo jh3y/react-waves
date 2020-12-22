@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "package": "rollup --config rollup.config.js",
-    "dev": "rollup --config rollup.config.js -w",
+    "dev": "rollup --config rollup.config.dev.js -w",
     "prepublish": "rollup --config rollup.config.js",
     "prepack": "rollup --config rollup.config.js"
   },
